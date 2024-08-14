@@ -1,8 +1,9 @@
 # Informed RRT* implementation on a Turtlebot3 Burger
 This repository contains real-world implementation of Informed RRT* on a Turtlebot3
 
-![](2D_path_planning.png)
-Demo: https://www.youtube.com/watch?v=rvcwfEhTCYM
+![](2D_path_planning.png) <br>
+Demo: https://www.youtube.com/watch?v=rvcwfEhTCYM <br>
+Manuscript: https://shorturl.at/Hfqy9
 
 ## Installing the dependencies
 *ROS Noetic*<br>
@@ -12,7 +13,7 @@ Demo: https://www.youtube.com/watch?v=rvcwfEhTCYM
 1. *Clone the package to your ros workspace*
 2. *Make sure all the dependencies are installed*
 ```
-cd <path to your ros_ws>/path_planning_turtlebot3 rosdep update
+cd <path to your ros_ws>/path_planning_turtlebot3 && rosdep update
 rosdep install --from-paths src -y --ignore-src
 ```
 3. *Build and source the workspace*
@@ -24,7 +25,7 @@ source install/setup.bash
 ```
 roslaunch path_planning_turtlebot3 project5_world.launch
 ```
-5. *To start planning and move the robot run*
+5. *To start planning and move the robot*
 ```
 roslaunch path_planning_turtlebot3 project5_code.launch
 ```
